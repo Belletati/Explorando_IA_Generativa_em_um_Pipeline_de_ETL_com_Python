@@ -7,7 +7,7 @@ except ImportError:
     from http.server import HTTPServer as Server
 
 PORT = int(os.getenv('PORT', 8000))  
-os.chdir('static')  
+#os.chdir('static')  
 
 httpd = Server(("", PORT), Handler)
 try:
